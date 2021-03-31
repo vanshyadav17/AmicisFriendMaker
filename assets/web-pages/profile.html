@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amici Finder • Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #f2f3f4;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .bold,
+        .regular {
+            font-size: 35px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .regular {
+            font-weight: 200;
+
+        }
+
+        .navbar {
+            padding-top: 11px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 2%;
+        }
+
+        .topnav {
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            border-bottom: 2px solid #574a3a;
+
+        }
+
+        .topnav a {
+            margin-right: 15px;
+            float: right;
+            color: #574a3a;
+            text-align: center;
+            padding: 8px 16px;
+
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+        }
+
+        .topnav a:hover {
+
+            color: black;
+            font-weight: 300;
+        }
+
+        .topnav p {
+            margin-top: 2px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        #pfp {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+        #name {
+
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            color: #288db9;
+            margin-top: 0;
+            margin-bottom: 7px;
+
+        }
+
+        .nameWrapper {
+            float: right;
+            margin-right: 300px;
+            margin-top: 0;
+        }
+
+        .editProfile {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            width: 98px;
+            margin-left: 1px;
+            height: 25px;
+            border: none;
+            border: solid 2px #d9b45c;
+            color: #d9b45c;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0);
+            font-size: 13px;
+        }
+
+        .editProfile:hover {
+            border: solid 2px #dba21b;
+            color: #dba21b;
+        }
+
+        .editProfile:focus {
+            outline: 0;
+        }
+
+        #age,
+        #location,
+        #hobbies {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            color: #707170;
+            margin-top: 0px;
+            margin-bottom: 17px;
+        }
+
+        #biography {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            color: #707170;
+            margin-bottom: 17px;
+        }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+            
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            color: #574a3a;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #ffffff;
+            color: #574a3a;
+            text-align: center;
+            border-bottom: 1px solid #574a3a;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .contactcontainer {
+            margin-top: 1rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #288db9;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            resize: vertical;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600px;
+        }
+
+
+        input[type=submit] {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            background-color: #d9b45c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600px;
+
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #dba21b;
+            font-weight: 800px
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #288db9;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a style="float: left; padding-top: 10px;" href="#" onclick="return false;">
+            <span class="bold">AMICI<span>
+                    <span class="regular">FINDER</span>
+        </a>
+        <div class="navbar">
+            <a href="/logout">LOGOUT</a>
+            <a href="/catalog">BROWSE CATALOG</a>
+            <a class="active" href="/my-profile">PROFILE</a>
+        </div>
+
+    </div>
+    <div class="main">
+        <img src="{pfplink}" id="pfp">
+        <div class="nameWrapper">
+            <h1 id="name">{name}</h1>
+            <button id="editProfileButton" class="editProfile">EDIT PROFILE</button>
+        </div>
+        <p id="biography">{biography}
+        </p>
+
+
+        <p id="age"><strong>AGE: </strong>{age}</p>
+        <p id="location"><strong>LOCATION: </strong>{location}</p>
+        <p id="location"><strong>ALMA MATER: </strong>{almamater}</p>
+        <p id="hobbies"><strong>HOBBIES & INTERESTS: </strong>
+            {hobbies}
+        </p>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>PROFILE EDITOR</h2>
+                </div>
+                <div class="modal-body">
+                        <form method="POST" action="/updateprofile">
+                            <h3>Biography</h3>
+                            <textarea id="bioedit" name="bioedit" placeholder="Biography" style="height:140px;  ">{biodata}</textarea>
+                            <h3>Location</h3>
+                            <input type="text" id="locationedit" name="location" placeholder="User Email Address" value="{locationdata}">
+                            <h3>Hobbies & Interests (Separate each with comma)</h3>
+                            <input type="text" id="hobbiesedit" name="hobbies" placeholder="Hobbies and Interests (Separate each with a comma)"" value="{hobbydata}">
+                            <h3>Profile Picture URL</h3>
+                            <input type="url" id="pfpedit" name="profilepic" placeholder="Profile Picture URL" value="{pfpdata}">
+                            <h3>Alma Mater</h3>
+                            <input type="text" id="almamater" name="almamater" placeholder="Alma Mater" value="{almamater}">
+                            
+                            <center><input type="submit" value="SAVE"></center>
+            
+            
+                        </form>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("editProfileButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+
+
+</html>

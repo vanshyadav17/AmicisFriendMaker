@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amici Finder • Profile Catalog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #f2f3f4;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .bold,
+        .regular {
+            font-size: 35px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .regular {
+            font-weight: 200;
+
+        }
+
+        .navbar {
+            padding-top: 11px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 2%;
+        }
+
+        .topnav {
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            border-bottom: 2px solid #574a3a;
+
+        }
+
+        .topnav a {
+            margin-right: 15px;
+            float: right;
+            color: #574a3a;
+            text-align: center;
+            padding: 8px 16px;
+
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+        }
+
+        .topnav a:hover {
+
+            color: black;
+            font-weight: 300;
+        }
+
+        .topnav p {
+            margin-top: 2px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        #pfp {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+        #name {
+
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            color: #288db9;
+            margin-top: 0;
+            margin-bottom: 7px;
+
+        }
+
+        #userpfp {
+            height: 87px;
+            width: 87px;
+            border-radius: 50%;
+            margin-top: 17px;
+            float: right;
+        }
+
+        .profileInner {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .profile {
+            margin-top: 30px;
+            width: auto;
+            height: 120px;
+            background-color: #d9b54c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #name2 {
+
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            color: #288db9;
+            margin-bottom: 0;
+
+        }
+
+        .nameWrapper {
+            float: left;
+
+
+        }
+
+        #wlocation {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0px;
+            margin-bottom: 0;
+            color: #494949;
+        }
+
+        #clicktoseemore {
+            font-size: 70%;
+            text-decoration: none;
+            font-weight: 600;
+            color: #05668f;
+
+        }
+
+        #clicktoseemore:hover {
+            color: #074b68;
+        }
+
+        .location-and-interests {
+            margin-top: 5px;
+        }
+
+        .profileWrap {
+            padding-bottom: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a style="float: left; padding-top: 10px;" href="#" onclick="return false;">
+            <span class="bold">AMICI<span>
+                    <span class="regular">FINDER</span>
+        </a>
+        <div class="navbar">
+            <a href="/logout">LOGOUT</a>
+            <a href="/catalog">BROWSE CATALOG</a>
+            <a class="active" href="/my-profile">PROFILE</a>
+        </div>
+
+    </div>
+    <div class="main">
+        <h2 id="name">Discover • Profile Catalog</h2>
+        <div class="profileWrap">

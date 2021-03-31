@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amici Finder • Login</title>
+    <meta name="description"
+        content="Amici Finder, a robust friend-making application helping you overcome your social anxiety.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            background-image: url("https://i.ibb.co/g459xtq/bg.jpg");
+            background-size: cover;
+        }
+
+        h1 {
+            color: rgb(156, 94, 35);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 5.2em;
+
+        }
+
+        .logintitle {
+            color: #80b4cf;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0;
+
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .container {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 14px;
+        }
+
+        .regular {
+            font-weight: 200;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #fffefe;
+            margin-left: 30rem;
+            margin-right: 30rem;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+
+        }
+
+        .usernameinput {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        .passwordinput {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        .emailimg {
+            position: absolute;
+            bottom: 10.56px;
+            left: 13.2px;
+            width: 15px;
+            height: 13.2px;
+            margin-bottom: 20px;
+        }
+
+        .passwordimg {
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+        }
+
+
+        input[type=email] {
+            width: 100%;
+            padding: 18px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 90%;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+   
+
+
+        }
+
+        input[type=password] {
+            width: 100%;
+            padding: 18px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 90%;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            
+        }
+
+        button {
+            background-color: #d9b54c;
+            color: white;
+            padding: 18px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 90%;
+            margin: 8px 0;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        .container {}
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <span class="bold">AMICI<span>
+                <span class="regular">FINDER</span>
+    </h1>
+
+    <form action="/login-auth" method="post" style="background-color:#fffefe; border-radius: 10px;">
+        <p class="logintitle">LOGIN</p>
+
+        <div class="container">
+            <div class="usernameinput">
+                <input type="email" placeholder="Enter Email" name="uname" required>
+
+            </div>
+            <div class="passwordinput">
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+            </div>
+
+            <button type="submit">LOGIN</button>
+
+
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

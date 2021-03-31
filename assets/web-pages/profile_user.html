@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amici Finder • {name}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #f2f3f4;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .bold,
+        .regular {
+            font-size: 35px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .regular {
+            font-weight: 200;
+
+        }
+
+        .navbar {
+            padding-top: 11px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 2%;
+        }
+
+        .topnav {
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            border-bottom: 2px solid #574a3a;
+
+        }
+
+        .topnav a {
+            margin-right: 15px;
+            float: right;
+            color: #574a3a;
+            text-align: center;
+            padding: 8px 16px;
+
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+        }
+
+        .topnav a:hover {
+
+            color: black;
+            font-weight: 300;
+        }
+
+        .topnav p {
+            margin-top: 2px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        #pfp {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+        #name {
+
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            color: #288db9;
+            margin-top: 0;
+            margin-bottom: 7px;
+
+        }
+
+        .nameWrapper {
+            float: right;
+            margin-right: 300px;
+            margin-top: 0;
+        }
+
+        .buttonContact {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            width: 98px;
+            margin-left: 1px;
+            height: 25px;
+            border: none;
+            border: solid 2px #d9b45c;
+            color: #d9b45c;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0);
+            font-size: 13px;
+        }
+
+        .buttonContact:hover {
+            border: solid 2px #dba21b;
+            color: #dba21b;
+        }
+
+        .buttonContact:focus {
+            outline: 0;
+        }
+
+        .buttonReport {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            width: 98px;
+            margin-left: 1px;
+            height: 25px;
+            border: none;
+            border: solid 2px red;
+            color: red;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0);
+            font-size: 13px;
+        }
+
+        .buttonReport:hover {
+            border: solid 2px rgb(143, 1, 1);
+            color: rgb(143, 1, 1);
+        }
+
+        .buttonReport:focus {
+            outline: 0;
+        }
+
+        #age,
+        #location,
+        #hobbies {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            color: #707170;
+            margin-top: 0px;
+            margin-bottom: 17px;
+        }
+
+        #biography {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            color: #707170;
+            margin-bottom: 17px;
+        }
+
+
+
+        .contactcontainer {
+            margin-top: 1rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #288db9;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            resize: vertical;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600px;
+        }
+
+
+        input[type=submit] {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            background-color: #d9b45c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600px;
+
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #dba21b;
+            font-weight: 800px
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #288db9;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a style="float: left; padding-top: 10px;" href="#" onclick="return false;">
+            <span class="bold">AMICI<span>
+                    <span class="regular">FINDER</span>
+        </a>
+        <div class="navbar">
+            <a href="/logout">LOGOUT</a>
+            <a href="/catalog">BROWSE CATALOG</a>
+            <a class="active" href="/my-profile">PROFILE</a>
+        </div>
+
+    </div>
+    <div class="main">
+        <div>
+            <img src="{pfplink}" id="pfp">
+            <div class="nameWrapper">
+                <h1 id="name">{name}</h1>
+                <form action="/contact?account={accountid}" method="GET">
+                    <button id="buttonContact" class="buttonContact">CONTACT</button>
+                </form>
+    
+                <form action="/report?account={accountid}" method="GET" style="margin-top: 10px;">
+                    <button id="buttonReport" class="buttonContact">REPORT</button>
+                </form>
+    
+                <form action="/block?account={accountid}" method="GET" style="margin-top: 10px;">
+                    <button id="buttonReport" class="buttonContact">BLOCK</button>
+                </form>
+    
+            </div>
+        </div>
+       
+
+        <p id="biography">{biography}
+        </p>
+
+
+        <p id="age"><strong>AGE: </strong>{age}</p>
+        <p id="location"><strong>LOCATION: </strong>{location}</p>
+        <p id="location"><strong>ALMA MATER: </strong>{almamater}</p>
+        <p id="hobbies"><strong>HOBBIES & INTERESTS: </strong>
+            {hobbies}
+        </p>
+
+    </div>
+
+</body>
+
+</html>

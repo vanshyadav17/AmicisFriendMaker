@@ -1,0 +1,150 @@
+{
+ "accounts": [
+  {
+   "email": "testuser@email.com",
+   "password": "abc123",
+   "name": "John Doe",
+   "age": "23",
+   "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+   "location": "Somewhere, Over, The, Rainbow",
+   "hobbies": [
+    "Skating",
+    "Programming",
+    "Math"
+   ],
+   "pfp": "https://thumbs.dreamstime.com/b/default-avatar-photo-placeholder-profile-picture-default-avatar-photo-placeholder-profile-picture-eps-file-easy-to-edit-125707135.jpg",
+   "id": "123456",
+   "blockedUsers": [],
+   "almamater": "University of Toronto1"
+  },
+  {
+   "email": "vansh.yadav@pathways.in",
+   "password": "12345678",
+   "name": "Vansh Yadav",
+   "age": "23",
+   "bio": "I'm a tenth grade student interested in all that is technical :).",
+   "location": "10 Cherwell Gardens",
+   "hobbies": [
+    "Programming",
+    "Mathematics",
+    "Science"
+   ],
+   "pfp": "https://media.istockphoto.com/vectors/profile-placeholder-image-gray-silhouette-no-photo-vector-id1016744076?b=1&k=6&m=1016744076&s=612x612&w=0&h=BzFVXGEM3ywHf1IebPJetP8M_2Tmhb2rDMx8SHXPrRY=",
+   "id": "IHhV7Z",
+   "blockedUsers": [],
+   "almamater": "University of Chicago"
+  },
+  {
+   "email": "shufen.daniel@gmail.com",
+   "password": "1234",
+   "name": "Shufen Daniel",
+   "age": "24",
+   "bio": "A history lover. I love the humanities. I also love fitness: soccer, basketball, ... you name it!",
+   "location": "5 Corfe Beeches St.",
+   "hobbies": [
+    "History",
+    "Soccer",
+    "Fitness"
+   ],
+   "pfp": "https://images.squarespace-cdn.com/content/v1/5b14d6b9e17ba3952cac9f04/1529194285863-CJKZQYFQW19BZULFH1N4/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzAFzFJoCInLPKyj9AG8yKe7-Q2aFvP177fkO9TY_-rz5WoqqTEZpmj4yDEOdwKV68/AlebertoCarmona-500x500.jpg",
+   "id": "fPyXrs",
+   "blockedUsers": [],
+   "almamater": "University of Oxford"
+  },
+  {
+   "email": "bentothorsten@outlook.com",
+   "password": "12345",
+   "name": "Bento Thorsten",
+   "age": "21",
+   "bio": "I'm a passionate follower of politics. I'm always ready to discuss current affairs. I also love philosophy!",
+   "location": "4 Lucerne Reach",
+   "hobbies": [
+    "Foreign Politics",
+    "Stoicism",
+    "Roman History"
+   ],
+   "pfp": "data:image/jpeg;base64,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",
+   "id": "ZxWNrd",
+   "blockedUsers": [],
+   "almamater": "Massachussetts Institute of Technology"
+  },
+  {
+   "email": "braxtonassol@braxton.com",
+   "password": "123456",
+   "name": "Assol Braxton",
+   "age": "22",
+   "bio": "I'm a bookworm! Reading is my passion. I work at a library and am always up for deep discussions about literature.",
+   "location": "55 Peartree Gate",
+   "hobbies": [
+    "Literature",
+    "Epistemology",
+    "Yoga"
+   ],
+   "pfp": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_500,h_500/https://bracesandsmiles.com/wp-content/uploads/2013/12/person4-false-500x500.jpg",
+   "id": "huNQoG",
+   "blockedUsers": [],
+   "almamater": "University of Pennsylvania"
+  },
+  {
+   "email": "zaccheus@protonmail.com",
+   "password": "1234567",
+   "name": "Angel Zaccheus",
+   "age": "23",
+   "bio": "Fashion is all I'm about. I aspire to be a fashion-designer and love the arts too. ",
+   "location": "44 Heol Penyfelin",
+   "hobbies": [
+    "Art",
+    "Painting"
+   ],
+   "pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7QhC1nP2u_iuftGlbq3zSTsZQvmgbcZS7Q&usqp=CAU",
+   "id": "V2CQVD",
+   "blockedUsers": [],
+   "almamater": "ETH Zurich"
+  },
+  {
+   "email": "m.konrad@gmail.com",
+   "password": "12345678",
+   "name": "Konrad Małgorzata",
+   "age": "25",
+   "bio": "I'm a man of the people. Nothing calls out to me more than community service. I love helping people.",
+   "location": "6 Lysander Gait Ave.",
+   "hobbies": [
+    "Community Service",
+    "Racing",
+    "Cars"
+   ],
+   "pfp": "https://reverehealth.com/wp-content/uploads/Hoopes-Daniel-500x500.jpg",
+   "id": "ult50F",
+   "blockedUsers": [],
+   "almamater": "University of Cambridge"
+  },
+  {
+   "email": "auroraminato@hotmail.com",
+   "password": "123456789",
+   "name": "Aurora Minato",
+   "age": "23",
+   "bio": "I love anime!!! Also a frequent binger of Netflix!",
+   "location": "67 Lark Drove St.",
+   "hobbies": [
+    "Netflix Binging",
+    "Anime"
+   ],
+   "pfp": "https://avatars.githubusercontent.com/u/21913?s=400&v=4",
+   "id": "NWcaXk",
+   "blockedUsers": [],
+   "almamater": "California Institute of Technology"
+  }
+ ],
+ "sessions": [
+  {
+   "ip": "1.1.1.1",
+   "email": "user@gmail.com",
+   "timeStarted": 1614500000
+  }
+ ],
+ "config": {
+  "adminPassword": "abcd",
+  "adminPanelURL": "adminpanel",
+  "port": "3000"
+ }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amici Admin Panel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #f2f3f4;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .bold,
+        .regular {
+            font-size: 35px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .regular {
+            font-weight: 200;
+
+        }
+
+        .navbar {
+            padding-top: 11px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 2%;
+        }
+
+        .topnav {
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            border-bottom: 2px solid #574a3a;
+
+        }
+
+        .topnav a {
+            margin-right: 15px;
+            float: right;
+            color: #574a3a;
+            text-align: center;
+            padding: 8px 16px;
+
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+        }
+
+        .topnav a:hover {
+
+            color: black;
+            font-weight: 300;
+        }
+
+        .topnav p {
+            margin-top: 2px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .cover {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+        }
+
+        .heading {
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #288db9;
+            margin-bottom: 0;
+        }
+
+        .desc {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            color: #574a3a;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a style="float: left; padding-top: 10px;" href="#" onclick="return false;">
+            <span class="bold">AMICI<span>
+                    <span class="regular">ADMIN PANEL</span>
+        </a>
+        <div class="navbar">
+            <a href="/adminredirect">AMICI FINDER HOME</a>
+            <a href="/{adminpanellink}/changepasscode">CHANGE PASSCODE</a>
+            <a href="/{adminpanellink}/adduser">ADD USER</a>
+            <a class="active" href="/{adminpanellink}">CONTROL PANEL</a>
+        </div>
+
+    </div>
+    <div class="main">
+
+
+        <div class="cover">
+            <h1 class="heading">Welcome to the Admin Control Panel!</h1>
+            <p class="desc">Try navigating through the links above. More admin items will be added in the future. </p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+
+</html>
